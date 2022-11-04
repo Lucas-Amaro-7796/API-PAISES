@@ -12,7 +12,7 @@ function preencherDados(info){
 
 
     
-    //console.log(info[0].name.common)
+    
     console.log(info)
 
 }
@@ -21,7 +21,7 @@ const pais = async() => {
     
     const pais = document.querySelector(".pais").value
 
-    //console.log(pais)
+   // api em funcionamento pelo FETCH, que tem essa função de fazer a requisição
 
     const url = `https://restcountries.com/v3.1/name/${pais}/`
     
