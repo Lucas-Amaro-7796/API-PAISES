@@ -10,11 +10,6 @@ function preencherDados(info){
     imagem.innerHTML = `<img src="${info[0].flags.png}">`
 
 
-
-    
-    
-    console.log(info)
-
 }
 
 const pais = async() => {
@@ -24,6 +19,8 @@ const pais = async() => {
    // api em funcionamento pelo FETCH, que tem essa função de fazer a requisição
 
     const url = `https://restcountries.com/v3.1/name/${pais}/`
+    
+   // await tem a função de esperar os dados antes de executar os scripts !!
     
     const dados = await fetch(url);
     const info = await dados.json();
