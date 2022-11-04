@@ -2,7 +2,7 @@ function preencherDados(info){
 
     document.getElementById('nomePais').value = info[0].name.official;
     document.getElementById('capitalDoPais').value = info[0].capital;
-    document.getElementById('idiomaDoPais').value = Object.values(info[0].languages).toString().split(",").join(", ");
+    document.getElementById('idiomaDoPais').value = Object.values(info[0].languages);
     document.getElementById('populacaoDoPais').value = info[0].population;
     document.getElementById('contineteDoPais').value = info[0].continents;
 
